@@ -1,6 +1,6 @@
 import {
   FeaturesSection,
-  FooterSection,
+  Footer,
   GallerySection,
   IntroSection,
   OverviewSection,
@@ -9,12 +9,18 @@ import {
   Banner,
 } from "@/components";
 import MobileNav from "@/components/ui/mobileNav";
+import NavBar from "@/components/ui/navBar";
 
 export default function Home() {
   return (
-    <main className="">
-      <h1 className="font-open text-l">Next js</h1>
-      <MobileNav />
-    </main>
+    <>
+      <NavBar />
+      <main className="">
+        <IntroSection />
+
+        <MobileNav />
+      </main>
+      <Footer />
+    </>
   );
 }

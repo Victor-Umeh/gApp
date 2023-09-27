@@ -3,19 +3,19 @@ import Link from "next/link";
 
 const MobileNav = () => {
   return (
-    <nav className="fixed bottom-0 flex w-full md:hidden">
+    <nav className="fixed bottom-0 flex w-full md:hidden font-open">
       <a
         href={"/store"}
-        className="py-5 text-md gap-2 font-bold w-full bg-primary flex items-center justify-center text-[#051923] border-r border-slate-700"
+        className="py-5 text-[1rem] gap-2 font-bold w-full bg-primary flex items-center justify-center text-primary border-r border-slate-900"
       >
-        <Apple className="text-3xl" />
+        <Apple className="text-2xl" />
         iOS App
       </a>
       <a
         href={"store"}
-        className="py-5 text-md gap-2 font-bold w-full bg-primary flex items-center justify-center text-[#051923] border-l border-slate-700"
+        className="py-5 text-[1rem] gap-2 font-bold w-full bg-primary flex items-center justify-center text-primary border-l border-slate-900"
       >
-        <Android className="text-3xl" />
+        <Android className="text-2xl" />
         Android
       </a>
     </nav>

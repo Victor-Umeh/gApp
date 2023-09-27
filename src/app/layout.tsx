@@ -8,7 +8,7 @@ const openSans = Open_Sans({
 });
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["100", "300", "400", "500", "700"],
   variable: "--font-roboto",
 });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${openSans.variable} ${roboto.variable}`}>
-      <body>{children}</body>
+      <body className="font-open">{children}</body>
     </html>
   );
 }

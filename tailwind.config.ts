@@ -9,10 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        primary: "#00a6fb",
-        secondary: "#051923",
+        primary: "#fee440",
+        secondary: "#0a0908",
       },
       backgroundImage: {
+        hero: "url('/header-poster.jpg')",
+        support: "url('/support-poster.jpg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -20,6 +22,9 @@ const config: Config = {
       fontFamily: {
         open: ["var(--font-open-sans)"],
         roboto: ["var(--font-roboto)"],
+      },
+      colors: {
+        main: "#0a0908",
       },
     },
   },

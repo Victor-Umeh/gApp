@@ -19,8 +19,12 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { BsAndroid2 } from "react-icons/bs";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { GrClose } from "react-icons/gr";
 
 export {
+  GrClose as Close,
+  RxHamburgerMenu as Hamburger,
   FaRegGem as Gem,
   FaApple as Apple,
   FaAndroid as Android,
