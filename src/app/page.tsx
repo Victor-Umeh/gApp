@@ -17,10 +17,11 @@ export default function Home() {
       <NavBar />
       <main className="">
         <IntroSection />
+        <Banner />
 
         <MobileNav />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

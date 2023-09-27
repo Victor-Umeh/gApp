@@ -20,7 +20,7 @@ const NavBar = () => {
         {links.map((link) => (
           <li
             key={link}
-            className="hover:text-main hover:bg-primary active:text-main active:bg-primary rounded-full py-2 px-4 transition-all duration-500 cursor-pointer"
+            className="px-4 py-2 transition-all duration-500 rounded-full cursor-pointer hover:text-main hover:bg-primary active:text-main active:bg-primary"
           >
             {link}
           </li>
