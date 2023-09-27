@@ -13,10 +13,11 @@ import MobileNav from "@/components/ui/mobileNav";
 export default function Home() {
   return (
     <>
-      <main className="">
+      <main className="font-open">
         <IntroSection />
         <Banner />
         <OverviewSection />
+        <FeaturesSection />
 
         {/* <MobileNav /> */}
       </main>

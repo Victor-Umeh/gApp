@@ -1,7 +1,7 @@
 import React from "react";
 
-const FeatureCard = () => {
-  return <div>featureCard</div>;
+const FeatureCard = ({ children }: { children: React.ReactNode }) => {
+  return <div>{children}</div>;
 };
 
 export default FeatureCard;
