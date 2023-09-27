@@ -1,15 +1,17 @@
 import Image from "next/image";
 import mobile from "../../public/mobile.png";
 import { Apple, AndriodIco } from "@/icons";
+import NavBar from "@/components/ui/navBar";
 
 const IntroSection = () => {
   return (
-    <header className="bg-hero bg-cover bg-no-repeat bg-right min-h-[90vh] relative flex items-end justify-center mt-[6rem] md:mt-[6.6rem] md:items-center font-roboto">
+    <header className="relative flex items-end justify-center min-h-screen bg-center bg-no-repeat bg-cover bg-hero lg:bg-right md:items-center font-roboto">
+      <NavBar />
       <div className="absolute w-full h-full opacity-60 bg-secondary" />
 
-      <section className="flex flex-col justify-center items-center md:flex-row relative w-[80%] max-w-[1000px] gap-[3rem] md:gap-[6rem]">
+      <section className="flex flex-col justify-center items-center md:flex-row relative md:w-[80%] max-w-[1000px] gap-[3rem] md:gap-[6rem] mt-[8rem] md:mt-[8.5rem]">
         <div className="flex flex-col gap-10 text-white md:order-last">
-          <h1 className="text-[35px] text-center md:text-left leading-10">
+          <h1 className="text-[35px] text-center md:text-left leading-8 md:leading-10">
             <span className=" font-[100]">We Created</span> <br />
             <span className="text-[24px] md:text-[42px] font-bold uppercase">
               Revolution In Connections
@@ -32,7 +34,7 @@ const IntroSection = () => {
             </a>
             <a
               href={"/store"}
-              className="py-3 px-7 text-sm  gap-2 font-bold w-[max-content] bg-primary flex items-center justify-center text-main border-l border-slate-900 rounded-full hover:bg-secondary hover:text-white transition-all duration-300"
+              className="py-3 px-7 text-sm  gap-2 font-bold w-[max-content] bg-violet-700 flex items-center justify-center text-main border-l border-slate-900 rounded-full hover:bg-secondary hover:text-white transition-all duration-300"
             >
               Google Play
               <AndriodIco className="text-lg" />
@@ -42,7 +44,7 @@ const IntroSection = () => {
         <Image
           alt="company mobile picture"
           src={mobile}
-          className="block max-w-[280px] w-[100%]"
+          className="block max-w-[260px] w-[50%]"
         />
       </section>
     </header>
