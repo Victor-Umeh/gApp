@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const MobileNav = () => {
   return (
-    <nav className="fixed bottom-0 flex w-full md:hidden font-open">
+    <nav className="fixed bottom-0 flex w-full md:hidden font-open z-10">
       <a
         href={"/store"}
         className="py-5 text-[1rem] gap-2 font-bold w-full bg-primary flex items-center justify-center text-primary border-r border-slate-900"

@@ -19,7 +19,7 @@ export default function Home() {
         <OverviewSection />
         <FeaturesSection />
 
-        {/* <MobileNav /> */}
+        <MobileNav />
       </main>
       {/* <Footer /> */}
     </>

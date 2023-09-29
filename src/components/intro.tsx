@@ -7,7 +7,7 @@ const IntroSection = () => {
   return (
     <header className="relative flex items-end justify-center min-h-screen bg-center bg-no-repeat bg-cover bg-hero lg:bg-right md:items-center font-roboto">
       <NavBar />
-      <div className="absolute w-full h-full opacity-80 bg-secondary" />
+      <div className="absolute w-full h-full bg-gray-900/80" />
 
       <section className="flex flex-col justify-center items-center md:flex-row relative md:w-[80%] max-w-[1000px] gap-[3rem] md:gap-[6rem] mt-[8rem] md:mt-[8.5rem]">
         <div className="flex flex-col gap-10 text-white md:order-last">
@@ -34,7 +34,7 @@ const IntroSection = () => {
             </a>
             <a
               href={"/store"}
-              className="py-3 px-7 text-sm  gap-2 font-bold w-[max-content] bg-violet-700 flex items-center justify-center text-main border-l border-slate-900 rounded-full hover:bg-secondary hover:text-white transition-all duration-300"
+              className="py-3 px-7 text-sm  gap-2 font-bold w-[max-content] bg-primary flex items-center justify-center text-main border-l border-slate-900 rounded-full hover:bg-secondary hover:text-white transition-all duration-300"
             >
               Google Play
               <AndriodIco className="text-lg" />
