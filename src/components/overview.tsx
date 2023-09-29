@@ -7,7 +7,7 @@ import ImageWrapper from "./ui/ImageWrapper";
 
 const OverviewSection = () => {
   return (
-    <section className="py-[6rem] px-[3rem] md:px-[12rem] divide-y-[2.5px] divide-gray-400 font-open">
+    <section className="py-[6rem] px-5 md:px-[12rem] divide-y-[2.5px] divide-gray-400 font-open">
       {/* section 1 */}
       <section className="flex flex-col lg:flex-row justify-center gap-[5rem]">
         <Article

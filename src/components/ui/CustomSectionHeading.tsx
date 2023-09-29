@@ -1,10 +1,15 @@
 import { IArticleProps } from "@/types";
 
+type Props = Omit<IArticleProps, "style" | "paragraph" | "children"> & {
+  questionMark?: string | null;
+};
+
 const CustomSectionHeading = ({
   tag,
   headerBold,
   headerLight,
-}: Omit<IArticleProps, "style" | "paragraph" | "children">) => (
+  questionMark = "?",
+}: Props) => (
   <div className="relative ">
     <span
       aria-label="graphics pattern label"
@@ -19,7 +24,7 @@ const CustomSectionHeading = ({
     </span>
     <h3 className="text-[38px] font-bold">
       {headerBold}
-      <span className="font-[200]"> {headerLight}</span> ?
+      <span className="font-[200]"> {headerLight}</span> {questionMark}
     </h3>
   </div>
 );

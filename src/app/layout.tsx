@@ -4,7 +4,7 @@ import { Open_Sans, Roboto } from "next/font/google";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["300", "400"],
+  weight: ["300", "400", "700", "800"],
   variable: "--font-open-sans",
 });
 const roboto = Roboto({

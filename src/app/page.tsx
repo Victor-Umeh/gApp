@@ -18,10 +18,12 @@ export default function Home() {
         <Banner />
         <OverviewSection />
         <FeaturesSection />
-
+        <GallerySection />
+        <PricesSection />
+        <SupportSection />
         <MobileNav />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
