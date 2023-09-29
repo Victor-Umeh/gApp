@@ -2,17 +2,8 @@
 import mobileTop from "../../public/mobile-top.png";
 import mobileBottom from "../../public/mobile-bottom.png";
 import { Check } from "@/icons";
-import { Article } from "./ui/Article";
-import { ImageWrapper } from "./ui/ImageWrapper";
-
-export type IArticleProps = {
-  children: React.ReactNode;
-  tag: string;
-  headerBold: string;
-  headerLight: string;
-  paragraph: string;
-  style?: string;
-};
+import Article from "./ui/Article";
+import ImageWrapper from "./ui/ImageWrapper";
 
 const OverviewSection = () => {
   return (
