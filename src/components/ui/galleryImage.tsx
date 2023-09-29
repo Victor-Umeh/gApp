@@ -2,7 +2,7 @@ import Image from "next/image";
 import placeholder from "../../../public/header-poster.jpg";
 
 const GalleryImage = () => (
-  <div className="relative w-[400px] h-[800px]">
+  <div className="relative w-full h-full">
     <Image
       src={placeholder}
       alt="placeholder"

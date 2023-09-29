@@ -1,5 +1,4 @@
 import { Android, Apple } from "@/icons";
-import Link from "next/link";
 
 const MobileNav = () => {
   return (

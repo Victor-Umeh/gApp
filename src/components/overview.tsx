@@ -2,14 +2,14 @@
 import mobileTop from "../../public/mobile-top.png";
 import mobileBottom from "../../public/mobile-bottom.png";
 import { Check } from "@/icons";
-import Article from "./ui/Article";
-import ImageWrapper from "./ui/ImageWrapper";
+import { Article } from "./ui/index";
+import { ImageWrapper } from "./ui";
 
 const OverviewSection = () => {
   return (
-    <section className="py-[6rem] px-5 md:px-[12rem] divide-y-[2.5px] divide-gray-400 font-open">
+    <section className="py-[6rem] px-5 md:px-[8rem] divide-y-[2.5px] divide-gray-400 font-open">
       {/* section 1 */}
-      <section className="flex flex-col lg:flex-row justify-center gap-[5rem]">
+      <section className="flex flex-col lg:flex-row justify-center md:justify-between gap-[5rem]">
         <Article
           headerBold="What is"
           headerLight="GUPA Application"
@@ -22,7 +22,7 @@ const OverviewSection = () => {
         >
           <div className="flex flex-col items-center gap-12 md:flex-row">
             <p className="text-8xl font-[200] flex flex-col justify-center md:flex-row items-baseline">
-              89{" "}
+              89
               <span className="text-[24px] text-gray-400 min-w-[max-content]">
                 Top Reviews
               </span>
@@ -40,7 +40,7 @@ const OverviewSection = () => {
       </section>
 
       {/* section 2 */}
-      <section className="flex flex-col lg:flex-row justify-center gap-[5rem]">
+      <section className="flex flex-col lg:flex-row justify-center md:justify-between gap-[5rem]">
         <ImageWrapper src={mobileBottom} alt="bottom half of smart phone" />
         <Article
           headerBold="Why choose"

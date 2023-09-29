@@ -1,15 +1,8 @@
-import CustomSectionHeading from "./ui/CustomSectionHeading";
-import { Facebook, Twitter, Instagram, Skype, Apple, Android } from "@/icons";
+import { CustomSectionHeading } from "./ui";
+import { socials } from "@/utils/constants";
+import { Apple, Android } from "@/icons";
 
 const Footer = () => {
-  const socials = [
-    { Logo: <Facebook />, link: "link" },
-    { Logo: <Twitter />, link: "link" },
-    { Logo: <Instagram />, link: "link" },
-    { Logo: <Skype />, link: "link" },
-    { Logo: <Apple />, link: "link" },
-    { Logo: <Android />, link: "link" },
-  ];
   return (
     <footer className="mb-[4rem] md:mb-0">
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-12 px-5 py-[5rem] md:px-[8rem] md:py-[11rem]">
@@ -19,6 +12,7 @@ const Footer = () => {
           headerLight="Trial Version"
           tag="Downloading"
         />
+
         <a
           href={"/store"}
           className="py-6 px-10 text-md gap-2 font-bold w-[max-content] bg-primary flex items-center justify-center text-black rounded-full hover:bg-secondary hover:text-secondary transition-all duration-300 md:ml-auto"
@@ -50,7 +44,7 @@ const Footer = () => {
             target="_blank"
             className="w-[64px] h-[64px] text-3xl flex items-center justify-center rounded-full"
           >
-            {social.Logo}
+            <social.Logo />
           </a>
         ))}
       </div>

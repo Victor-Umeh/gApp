@@ -1,10 +1,9 @@
-import React from "react";
-import CustomSectionHeading from "./ui/CustomSectionHeading";
-import GallerySlide from "./ui/gallerySlide";
+import { CustomSectionHeading } from "./ui";
+import { GallerySlide } from "./ui";
 
 const GallerySection = () => {
   return (
-    <section className="pt-[5rem] px-5 md:px-[6rem]">
+    <section className="pt-[5rem] px-5 md:p-[8rem]">
       <CustomSectionHeading
         headerBold="Xtra Application"
         headerLight="Gallery"

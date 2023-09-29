@@ -1,7 +1,7 @@
 import Image from "next/image";
 import mobile from "../../public/mobile.png";
 import { Apple, AndriodIco } from "@/icons";
-import NavBar from "@/components/ui/navBar";
+import { NavBar } from "./ui";
 
 const IntroSection = () => {
   return (

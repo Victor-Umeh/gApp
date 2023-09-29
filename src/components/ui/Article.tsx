@@ -1,5 +1,5 @@
+import CustomSectionHeading from "./customSectionHeading";
 import { IArticleProps } from "@/types";
-import CustomSectionHeading from "./CustomSectionHeading";
 
 const Article = ({
   children,
