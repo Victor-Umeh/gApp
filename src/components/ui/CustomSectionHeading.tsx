@@ -28,7 +28,11 @@ const CustomSectionHeading = ({
     >
       {tag}
     </span>
-    <h3 className="text-[38px] font-[900] z-10 relative">
+    <h3
+      className={clsx("text-[38px] font-[900] z-10 relative", {
+        "text-white": variants === "light",
+      })}
+    >
       {headerBold}
       <span className="font-[200]"> {headerLight}</span> {questionMark}
     </h3>
