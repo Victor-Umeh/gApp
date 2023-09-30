@@ -1,7 +1,9 @@
 import { IArticleProps } from "@/types";
+import clsx from "clsx";
 
 type Props = Omit<IArticleProps, "style" | "paragraph" | "children"> & {
   questionMark?: string | null;
+  variants?: "light" | "dark";
 };
 
 const CustomSectionHeading = ({
@@ -9,11 +11,15 @@ const CustomSectionHeading = ({
   headerBold,
   headerLight,
   questionMark = "?",
+  variants = "dark",
 }: Props) => (
   <div className="relative ">
     <span
       aria-label="graphics pattern label"
-      className="absolute top-0 left-0 md:-left-6 border-[9px] border-[#1b6e56]/10 w-[60px] h-[60px] rounded-lg rotate-45"
+      role="pattern"
+      className={clsx(
+        "absolute top-0 left-0 md:-left-6 border-[9px] border-[#ffe565]/40 w-[60px] h-[60px] rounded-lg rotate-45"
+      )}
     />
     <span
       className="text-[#808080] text-md font-[200] italic"
@@ -22,7 +28,7 @@ const CustomSectionHeading = ({
     >
       {tag}
     </span>
-    <h3 className="text-[38px] font-[900]">
+    <h3 className="text-[38px] font-[900] z-10 relative">
       {headerBold}
       <span className="font-[200]"> {headerLight}</span> {questionMark}
     </h3>

@@ -11,6 +11,9 @@ import {
   Skype,
   Apple,
   Android,
+  Phone,
+  Envelope,
+  Marker,
 } from "@/icons";
 
 const text =
@@ -83,4 +86,11 @@ export const packages = [
       { package: "Lifetime Updates", available: true },
     ],
   },
+];
+
+export const supportHandles = [
+  { type: "Phone", handle: "+2349000500500", Icon: Phone },
+  { type: "Email", handle: "support@gupa.com", Icon: Envelope },
+  { type: "Address", handle: "12 Ikorodu Road", Icon: Marker },
+  { type: "Social Media", handle: "@gupa_app", Icon: Skype },
 ];

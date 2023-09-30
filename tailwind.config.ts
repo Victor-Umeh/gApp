@@ -13,6 +13,7 @@ const config: Config = {
         secondary: "#0a0908",
       },
       backgroundImage: {
+        feature: "url('/features-poster.jpg')",
         hero: "url('/header-poster.jpg')",
         support: "url('/support-poster.jpg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
