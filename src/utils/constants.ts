@@ -45,11 +45,10 @@ export const packages = [
       { package: "Full Version", available: false },
       { package: "Lifetime Updates", available: false },
     ],
-    callToAction: "Purchase Now",
   },
   {
     category: "secondary",
-    tag: "",
+    tag: "Personal Plan",
     price: "$29",
     packages: [
       { package: "Basic Version", available: true },
@@ -58,7 +57,6 @@ export const packages = [
       { package: "Full Version", available: true },
       { package: "Lifetime Updates", available: false },
     ],
-    callToAction: "Purchase Now",
   },
   {
     category: "main",
@@ -72,8 +70,6 @@ export const packages = [
       { package: "Lifetime Updates", available: true },
       { package: "Phone Support", available: false },
     ],
-
-    callToAction: "Purchase Now",
   },
   {
     category: "secondary",
@@ -86,7 +82,5 @@ export const packages = [
       { package: "Full Version", available: true },
       { package: "Lifetime Updates", available: true },
     ],
-
-    callToAction: "Purchase Now",
   },
 ];

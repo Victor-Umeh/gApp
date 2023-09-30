@@ -1,6 +1,6 @@
 import { default as Article } from "@/components/ui/article";
 import { default as CustomSectionHeading } from "@/components/ui/customSectionHeading";
-import { default as ImageWrapper } from "@/components/ui/imageWrapper";
+import { default as ImageWrapper } from "@/components/ui/ImageWrapper";
 import { default as Address } from "@/components/ui/address";
 import { default as AppStoreButton } from "@/components/ui/appStoreButton";
 import { default as FeatureCard } from "@/components/ui/featureCard";

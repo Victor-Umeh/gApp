@@ -1,7 +1,7 @@
 import React from "react";
 
 const SupportSection = () => {
-  return <div>support</div>;
+  return <section>support</div>;
 };
 
 export default SupportSection;

@@ -40,7 +40,7 @@ const OverviewSection = () => {
       </section>
 
       {/* section 2 */}
-      <section className="flex flex-col lg:flex-row justify-center md:justify-between gap-[5rem]">
+      <section className="flex flex-col lg:flex-row justify-center md:justify-between gap-[4rem]">
         <ImageWrapper src={mobileBottom} alt="bottom half of smart phone" />
         <Article
           headerBold="Why choose"
@@ -53,32 +53,32 @@ const OverviewSection = () => {
         leave your key and hit the road."
           style="translate-y-12"
         >
-          <ul className="flex flex-col items-start w-full gap-4 md:gap-[7rem] md:flex-row">
-            <div className="flex flex-col items-start space-y-2">
+          <ul className="flex flex-col items-start w-full gap-4 md:gap-[6rem] md:flex-row">
+            <div className="flex flex-col items-start space-y-4">
               <li className="font-semibold text-main text-[18px] group">
-                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-violet-500 text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
+                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-primary text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
                 Easy to Use
               </li>
               <li className="font-semibold text-main text-[18px] group">
-                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-violet-500 text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
+                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-primary text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
                 Mobile Check-In
               </li>
               <li className="font-semibold text-main text-[18px] group">
-                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-violet-500 text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
+                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-primary text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
                 Account Activity
               </li>
             </div>
-            <div className="flex flex-col items-start space-y-2">
+            <div className="flex flex-col items-start space-y-4">
               <li className="font-semibold text-main text-[18px] group">
-                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-violet-500 text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
+                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-primary text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
                 Easy to Use
               </li>
               <li className="font-semibold text-main text-[18px] group">
-                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-violet-500 text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
+                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-primary text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
                 Mobile Check-In
               </li>
               <li className="font-semibold text-main text-[18px] group">
-                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-violet-500 text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
+                <Check className="inline w-[38px] h-[38px] p-[0.63rem] mr-2 text-5xl rounded-full bg-primary text-main group-hover:bg-secondary group-hover:text-secondary transition duration-500" />
                 Account Activity
               </li>
             </div>
