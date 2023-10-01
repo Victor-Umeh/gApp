@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Open_Sans, Roboto } from "next/font/google";
+import { ScrollBtn } from "@/components/ui";
+import { Footer } from "@/components";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -25,7 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${openSans.variable} ${roboto.variable}`}>
-      <body className="font-open">{children}</body>
+      <body className="font-open relative">
+        {children}
+        <ScrollBtn />
+        <Footer />
+      </body>
     </html>
   );
 }

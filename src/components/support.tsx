@@ -14,7 +14,7 @@ const SupportSection = () => {
         variants="light"
       />
 
-      <div className="relative w-full z-10 flex flex-col md:flex-row gap-4 md:justify-between mt-[5rem]">
+      <div className="relative w-[90%] z-10 flex flex-col gap-8 md:flex-row gap-4 md:justify-center  py-[8rem]">
         <form className="w-full flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row gap-5 sm:gap-9">
             <label htmlFor="name" className="w-full">
@@ -75,7 +75,7 @@ const SupportSection = () => {
           </label>
         </form>
 
-        <div className="">
+        <div className="flex flex-col gap-12 py-12 md:py-8">
           {supportHandles.map((handle) => (
             <SupportChannel
               children={<handle.Icon />}

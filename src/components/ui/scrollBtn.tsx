@@ -1,7 +1,11 @@
-import React from "react";
+import { UpArrow } from "@/icons";
 
 const ScrollBtn = () => {
-  return <div>scrollBtn</div>;
+  return (
+    <button>
+      <UpArrow />
+    </button>
+  );
 };
 
 export default ScrollBtn;

@@ -28,7 +28,7 @@ export {
   FaRegGem as Gem,
   FaApple as Apple,
   FaAndroid as Android,
-  FaChevronCircleUp as Chevron,
+  FaChevronCircleUp as UpArrow,
   FaCheck as Check,
   FaBolt as Bolt,
   FaUserSecret as User,
