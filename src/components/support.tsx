@@ -1,5 +1,6 @@
 import { CustomSectionHeading } from "./ui";
 import SupportChannel from "./ui/supportChannels";
+import { supportHandles } from "@/utils/constants";
 
 const SupportSection = () => {
   return (
@@ -13,28 +14,59 @@ const SupportSection = () => {
         variants="light"
       />
 
-      <div>
-        <form className="relative w-full z-10 border border-red-400">
-          <div>
-            <label htmlFor="name" className="block w-screen">
-              <span>Your Name (required)</span>
-              <input type="text" id="name" />
+      <div className="relative w-full z-10 flex flex-col md:flex-row gap-4 md:justify-between mt-[5rem]">
+        <form className="w-full flex flex-col gap-4">
+          <div className="flex flex-col sm:flex-row gap-5 sm:gap-9">
+            <label htmlFor="name" className="w-full">
+              <span className="block mb-3 text-[14px] text-white/80 ml-4">
+                Your Name (required)
+              </span>
+              <input
+                className="rounded-full text-main text-[14px] p-3 w-full"
+                type="text"
+                id="name"
+              />
             </label>
-            <label htmlFor="email" className="block w-screen">
-              <span>Your Email (required)</span>
-              <input type="email" id="email" />
+
+            <label htmlFor="email" className="w-full">
+              <span className="block mb-3 text-[14px] text-white/80 ml-4">
+                Your Email (required)
+              </span>
+              <input
+                className="rounded-full text-main text-[14px] p-3 w-full"
+                type="email"
+                id="email"
+              />
             </label>
           </div>
-          <label htmlFor="" className="block w-screen">
-            <span>Subject</span>
-            <input type="text" />
+
+          <label htmlFor="subject">
+            <span className="block mb-3 text-[14px] text-white/80 ml-4">
+              Subject
+            </span>
+            <input
+              className="rounded-full text-main text-[14px] p-3 w-full"
+              type="text"
+              id="subject"
+            />
           </label>
-          <label htmlFor="" className="block w-screen">
-            <span></span>
-            <input type="text" />
+          <label htmlFor="department">
+            <span className="block mb-3 text-[14px] text-white/80 ml-4">
+              Department
+            </span>
+            <input
+              className="rounded-full text-main text-[14px] p-3 w-full"
+              type="text"
+              id="department"
+            />
           </label>
-          <label htmlFor="message" className="block w-screen">
+
+          <label htmlFor="message">
+            <span className="block mb-3 text-[14px] text-white/80 ml-4">
+              Your Mesage
+            </span>
             <textarea
+              className="w-full rounded-3xl"
               name="message"
               id="message"
               cols={30}
@@ -43,7 +75,15 @@ const SupportSection = () => {
           </label>
         </form>
 
-        <div></div>
+        <div className="">
+          {supportHandles.map((handle) => (
+            <SupportChannel
+              children={<handle.Icon />}
+              type={handle.type}
+              handle={handle.handle}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

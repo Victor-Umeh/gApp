@@ -7,7 +7,7 @@ import { default as FeatureCard } from "@/components/ui/featureCard";
 import { default as GalleryCard } from "@/components/ui/galleryCard";
 import { default as PriceCard } from "@/components/ui/priceCard";
 import { default as ScrollBtn } from "@/components/ui/scrollBtn";
-import { default as SocialIcon } from "@/components/ui/socialIcon";
+import { default as SocialIcon } from "@/components/ui/supportChannels";
 import { default as GalleryImage } from "@/components/ui/galleryImage";
 import { default as GallerySlide } from "@/components/ui/gallerySlide";
 import { default as NavBar } from "@/components/ui/navBar";
