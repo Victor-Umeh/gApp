@@ -9,7 +9,7 @@ const IntroSection = () => {
       <NavBar />
       <div className="absolute w-full h-full bg-gray-900/80" />
 
-      <section className="flex flex-col justify-center items-center md:flex-row relative md:w-[80%] max-w-[1000px] gap-[3rem] md:gap-[6rem] mt-[8rem] md:mt-[8.5rem]">
+      <section className="flex flex-col justify-center items-center md:flex-row relative md:w-[80%] max-w-[1000px] gap-[3rem] md:gap-[6rem] mb-[4rem] md:mt-[8.5rem]">
         <div className="flex flex-col gap-10 text-white md:order-last">
           <h1 className="text-[35px] text-center md:text-left leading-8 md:leading-10">
             <span className=" font-[100]">We Created</span> <br />

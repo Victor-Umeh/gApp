@@ -1,9 +1,9 @@
-import { PriceCard, CustomSectionHeading } from "./ui";
+import { PriceCard, CustomSectionHeading } from "@/components/ui";
 import { packages } from "@/utils/constants";
 
 const PricesSection = () => {
   return (
-    <section className="pt-[5rem] px-5 md:px-[8rem]">
+    <section className="py-[10rem] px-5 md:px-[8rem]" id="prices">
       <CustomSectionHeading
         tag="OFFERS"
         headerBold="Packages &"

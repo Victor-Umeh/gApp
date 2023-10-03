@@ -1,6 +1,5 @@
 import {
   FeaturesSection,
-  Footer,
   GallerySection,
   IntroSection,
   OverviewSection,
@@ -8,7 +7,6 @@ import {
   SupportSection,
   Banner,
 } from "@/components";
-import { ScrollBtn } from "@/components/ui";
 import MobileNav from "@/components/ui/mobileNav";
 
 export default function Home() {
