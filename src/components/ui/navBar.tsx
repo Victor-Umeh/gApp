@@ -39,14 +39,12 @@ const NavBar = () => {
         {/* nav-links */}
         <ul className="hidden md:flex md:flex-1 md:justify-end md:gap-6  text-[13px] text-white capitalize tracking-widest">
           {links.map((link) => (
-            <li
-              className={clsx(
-                "px-5 py-3 duration-300 rounded-full cursor-pointer hover:text-main hover:bg-primary active:text-main active:bg-primary",
-                { "text-main bg-primary": activeLink === link }
-              )}
-              key={link}
-            >
+            <li key={link}>
               <Link
+                className={clsx(
+                  "px-5 py-3 duration-300 rounded-full cursor-pointer hover:text-main hover:bg-primary active:text-main active:bg-primary",
+                  { "text-main bg-primary": activeLink === link }
+                )}
                 href={`#${link}`}
                 onClick={(e) => {
                   e.preventDefault();
