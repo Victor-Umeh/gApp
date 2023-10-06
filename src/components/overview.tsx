@@ -1,4 +1,3 @@
-// import React from "react";
 import mobileTop from "../../public/mobile-top.png";
 import mobileBottom from "../../public/mobile-bottom.png";
 import { Check } from "@/icons";
@@ -7,7 +6,10 @@ import { ImageWrapper } from "./ui";
 
 const OverviewSection = () => {
   return (
-    <section className="py-[6rem] px-5 md:px-[8rem] divide-y-[2.5px] divide-gray-400 font-open">
+    <section
+      className="py-[6rem] px-5 md:px-[8rem] divide-y-[2.5px] divide-gray-400 font-open"
+      id="overview"
+    >
       {/* section 1 */}
       <section className="flex flex-col lg:flex-row justify-center md:justify-between gap-[5rem]">
         <Article

@@ -4,7 +4,10 @@ import { supportHandles } from "@/utils/constants";
 
 const SupportSection = () => {
   return (
-    <section className="relative pt-[5rem] px-5 md:px-[8rem] bg-support bg-center bg-no-repeat bg-cover lg:bg-right min-h-screen">
+    <section
+      className="relative pt-[5rem] px-5 md:px-[8rem] bg-support bg-center bg-no-repeat bg-cover lg:bg-right min-h-screen"
+      id="support"
+    >
       <div className="absolute top-0 left-0 w-full h-full bg-gray-900/80 " />
       <CustomSectionHeading
         tag="CONTACT US"
@@ -14,7 +17,7 @@ const SupportSection = () => {
         variants="light"
       />
 
-      <div className="relative w-[90%] z-10 flex flex-col gap-8 lg:flex-row gap-4 md:justify-center  py-[8rem]">
+      <div className="relative w-[90%] mx-auto z-10 flex flex-col gap-8 lg:flex-row gap-4 md:justify-center py-[8rem]">
         <form className="w-full flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row gap-5 sm:gap-9">
             <label htmlFor="name" className="w-full">

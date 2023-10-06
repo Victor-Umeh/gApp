@@ -1,12 +1,32 @@
+"use client";
 import Image from "next/image";
-import { Hamburger, Gem } from "@/icons";
 import Link from "next/link";
+import clsx from "clsx";
+import { usePathname } from "next/navigation";
+import { Hamburger, Gem } from "@/icons";
 
 const links = ["intro", "overview", "features", "gallery", "prices", "support"];
 
 const NavBar = () => {
+  //Not optimal❌
+  // window.addEventListener("scroll", () => {
+  //   console.log(window.scrollY);
+
+  //   if (window.scrollY > 100) {
+  //     ref.current.classList.remove("top-7");
+  //     ("bg-black/70 top-0");
+  //     ref.current.classList.add("bg-black/70", "top-0");
+  //   } else {
+  //     ref.current.classList.add("top-7");
+  //     ("bg-black/70 top-0");
+  //     ref.current.classList.remove("bg-black/70", "top-0");
+  //   }
+  // });
+  const activeLink = usePathname();
+  console.log(activeLink);
+
   return (
-    <nav className="fixed z-[999] w-full p-6 top-7 bg-secondary md:bg-secondary/0">
+    <nav className="fixed z-[999] w-full p-6 top-7" id="nav">
       <div className="md:w-[80%] flex items-center justify-between mx-auto font-[600] text-white">
         {/* logo */}
         <Image
@@ -19,11 +39,25 @@ const NavBar = () => {
         {/* nav-links */}
         <ul className="hidden md:flex md:flex-1 md:justify-end md:gap-6  text-[13px] text-white capitalize tracking-widest">
           {links.map((link) => (
-            <Link href={link} key={link}>
-              <li className="px-5 py-3 duration-300 rounded-full cursor-pointer hover:text-main hover:bg-primary active:text-main active:bg-primary">
+            <li
+              className={clsx(
+                "px-5 py-3 duration-300 rounded-full cursor-pointer hover:text-main hover:bg-primary active:text-main active:bg-primary",
+                { "text-main bg-primary": activeLink === link }
+              )}
+              key={link}
+            >
+              <Link
+                href={`#${link}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById(link)
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 {link}
-              </li>
-            </Link>
+              </Link>
+            </li>
           ))}
         </ul>
 

@@ -3,7 +3,7 @@ import { GallerySlide } from "./ui";
 
 const GallerySection = () => {
   return (
-    <section className="pt-[5rem] px-5 md:p-[8rem]">
+    <section className="pt-[5rem] px-5 md:p-[8rem]" id="gallery">
       <CustomSectionHeading
         headerBold="Xtra Application"
         headerLight="Gallery"

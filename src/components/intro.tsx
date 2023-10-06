@@ -1,11 +1,41 @@
+"use client";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import mobile from "../../public/mobile.png";
 import { Apple, AndriodIco } from "@/icons";
 import { NavBar } from "./ui";
 
 const IntroSection = () => {
+  const ref = useRef<any>();
+
+  //Intersection observation function that updates site navBar when hero/intro section is not inView.
+  useEffect(() => {
+    const _el = document.getElementById("nav");
+
+    const observationCallbackFunc = (entries: any) => {
+      if (!entries[0].isIntersecting) {
+        _el?.classList.remove("top-7");
+        _el?.classList.add("bg-black/90", "top-0", "duration-[800ms]");
+      } else {
+        _el?.classList.add("top-7");
+        _el?.classList.remove("bg-black/90", "top-0");
+      }
+    };
+
+    const observer = new IntersectionObserver(observationCallbackFunc, {
+      root: null,
+      threshold: 0.1,
+    });
+
+    observer.observe(ref.current);
+  }, []);
+
   return (
-    <header className="relative flex items-end justify-center min-h-screen bg-center bg-no-repeat bg-cover bg-hero lg:bg-right md:items-center font-roboto">
+    <header
+      className="relative flex items-end justify-center min-h-screen bg-center bg-no-repeat bg-cover bg-hero lg:bg-right md:items-center font-roboto"
+      id="intro"
+      ref={ref}
+    >
       <NavBar />
       <div className="absolute w-full h-full bg-gray-900/80" />
 

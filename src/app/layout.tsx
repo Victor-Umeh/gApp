@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${openSans.variable} ${roboto.variable}`}>
-      <body className="font-open relative">
+      <body className="font-open relative scroll-smooth">
         {children}
         <ScrollBtn />
         <Footer />
