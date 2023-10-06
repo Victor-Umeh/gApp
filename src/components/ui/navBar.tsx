@@ -23,7 +23,7 @@ const NavBar = () => {
   //   }
   // });
   const activeLink = usePathname();
-  console.log(activeLink);
+  // console.log(pathname);
 
   return (
     <nav className="fixed z-[999] w-full p-6 top-7" id="nav">
@@ -43,7 +43,7 @@ const NavBar = () => {
               <Link
                 className={clsx(
                   "px-5 py-3 duration-300 rounded-full cursor-pointer hover:text-main hover:bg-primary active:text-main active:bg-primary",
-                  { "text-main bg-primary": activeLink === link }
+                  { "text-main bg-primary": activeLink == link }
                 )}
                 href={`#${link}`}
                 onClick={(e) => {

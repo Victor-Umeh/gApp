@@ -13,7 +13,8 @@ const ScrollBtn = () => {
 
   return (
     <button
-      className="fixed duration-500 bottom-12 right-8 w-10 h-10 flex items-center justify-center text-main rounded-full bg-primary z-[999]"
+      id="scroll-btn"
+      className="fixed bottom-12 right-8 w-10 h-10 flex items-center justify-center text-main rounded-full bg-primary opacity-0 duration-500 z-[999]"
       onClick={(e) => {
         e.preventDefault();
         document

@@ -10,24 +10,39 @@ const IntroSection = () => {
 
   //Intersection observation function that updates site navBar when hero/intro section is not inView.
   useEffect(() => {
-    const _el = document.getElementById("nav");
+    const _nav = document.getElementById("nav");
+    const _scrollBtn = document.getElementById("scroll-btn");
 
     const observationCallbackFunc = (entries: any) => {
       if (!entries[0].isIntersecting) {
-        _el?.classList.remove("top-7");
-        _el?.classList.add("bg-black/90", "top-0", "duration-[800ms]");
+        _nav?.classList.remove("top-7");
+        _nav?.classList.add("bg-black/90", "top-0", "duration-[800ms]");
       } else {
-        _el?.classList.add("top-7");
-        _el?.classList.remove("bg-black/90", "top-0");
+        _nav?.classList.add("top-7");
+        _nav?.classList.remove("bg-black/90", "top-0");
+      }
+    };
+    const scrollBtnObserverFunc = (entries: any) => {
+      if (!entries[0].isIntersecting) {
+        _scrollBtn?.classList.remove("opacity-0");
+      } else {
+        _scrollBtn?.classList.add("opacity-0");
       }
     };
 
-    const observer = new IntersectionObserver(observationCallbackFunc, {
+    const navObserver = new IntersectionObserver(observationCallbackFunc, {
       root: null,
       threshold: 0.1,
     });
 
-    observer.observe(ref.current);
+    const scrollBtnObserver = new IntersectionObserver(scrollBtnObserverFunc, {
+      root: null,
+      threshold: 0.1,
+      rootMargin: `${_nav?.getBoundingClientRect().height}px`,
+    });
+
+    navObserver.observe(ref.current);
+    scrollBtnObserver.observe(ref.current);
   }, []);
 
   return (
