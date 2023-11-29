@@ -1,5 +1,5 @@
 import FeatureCard from './ui/featureCard'
-import { featuresData } from '@/utils/constants'
+import { featuresData } from '../utils/constants'
 
 const FeaturesSection = () => {
 	return (

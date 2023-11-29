@@ -1,5 +1,5 @@
 'use client'
-import { UpArrow } from '@/icons'
+import { UpArrow } from '../../icons'
 import { useState } from 'react'
 import clsx from 'clsx'
 

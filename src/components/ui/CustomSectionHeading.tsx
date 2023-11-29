@@ -1,4 +1,4 @@
-import { IArticleProps } from '@/types'
+import { IArticleProps } from '../../types'
 import clsx from 'clsx'
 
 type Props = Omit<IArticleProps, 'style' | 'paragraph' | 'children'> & {

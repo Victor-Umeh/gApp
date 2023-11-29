@@ -1,8 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Open_Sans, Roboto } from 'next/font/google'
-import ScrollBtn from '@/components/ui/scrollBtn'
-import Footer from '@/components/footer'
+import ScrollBtn from '../components/ui/scrollBtn'
+import Footer from '../components/footer'
 
 const openSans = Open_Sans({
 	subsets: ['latin'],

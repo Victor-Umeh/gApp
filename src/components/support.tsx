@@ -1,6 +1,6 @@
 import CustomSectionHeading from './ui/customSectionHeading'
 import SupportChannel from './ui/supportChannels'
-import { supportHandles } from '@/utils/constants'
+import { supportHandles } from '../utils/constants'
 
 const SupportSection = () => {
 	return (

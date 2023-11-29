@@ -1,6 +1,6 @@
 import PriceCard from './ui/priceCard'
 import CustomSectionHeading from './ui/customSectionHeading'
-import { packages } from '@/utils/constants'
+import { packages } from '../utils/constants'
 
 const PricesSection = () => {
 	return (

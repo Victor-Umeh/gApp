@@ -4,7 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 // import { usePathname, useSelectedLayoutSegments } from "next/navigation";
 import { motion, AnimatePresence } from 'framer-motion'
-import { Hamburger, Gem, Close } from '@/icons'
+import { Hamburger, Gem, Close } from '../../icons'
 import { useState } from 'react'
 
 const links = ['intro', 'overview', 'features', 'prices', 'support']

@@ -1,6 +1,6 @@
 import mobileTop from '../../public/mobile-top.png'
 import mobileBottom from '../../public/mobile-bottom.png'
-import { Check } from '@/icons'
+import { Check } from '../icons'
 import Article from './ui/article'
 import ImageWrapper from './ui/ImageWrapper'
 

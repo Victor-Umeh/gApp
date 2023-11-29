@@ -1,6 +1,6 @@
 import CustomSectionHeading from './ui/customSectionHeading'
-import { socials } from '@/utils/constants'
-import { Apple, Android } from '@/icons'
+import { socials } from '../utils/constants'
+import { Apple, Android } from '../icons'
 
 const Footer = () => {
 	return (
