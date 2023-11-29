@@ -17,7 +17,7 @@ const SupportSection = () => {
         variants="light"
       />
 
-      <div className="relative w-[90%] mx-auto z-10 flex flex-col gap-8 lg:flex-row gap-4 md:justify-center py-[8rem]">
+      <div className="relative z-10 flex flex-col gap-8 lg:flex-row gap-4 md:justify-center py-[8rem]">
         <form className="w-full flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row gap-5 sm:gap-9">
             <label htmlFor="name" className="w-full">

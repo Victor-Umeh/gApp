@@ -18,11 +18,12 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
-import { BsAndroid2 } from "react-icons/bs";
+import { BsAndroid2, BsThreeDots } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
 
 export {
+  BsThreeDots as Dots,
   GrClose as Close,
   RxHamburgerMenu as Hamburger,
   FaRegGem as Gem,
