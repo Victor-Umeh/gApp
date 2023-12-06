@@ -88,10 +88,11 @@ const SupportSection = () => {
 					{supportHandles.map(handle => (
 						<SupportChannel
 							key={handle.Icon}
-							children={<handle.Icon />}
 							type={handle.type}
 							handle={handle.handle}
-						/>
+						>
+							<handle.Icon />
+						</SupportChannel>
 					))}
 				</div>
 			</div>

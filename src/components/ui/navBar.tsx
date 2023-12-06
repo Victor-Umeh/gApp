@@ -11,6 +11,7 @@ const links = ['intro', 'overview', 'features', 'prices', 'support']
 
 const NavBar = () => {
 	const [menuOpen, setMenuOpen] = useState(false)
+
 	return (
 		<nav
 			className='fixed z-[999] w-full p-6 bg-black/90 lg:bg-transparent top-0 lg:top-7 duration-[800ms]'

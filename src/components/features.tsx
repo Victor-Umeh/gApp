@@ -12,6 +12,7 @@ const FeaturesSection = () => {
 			<section className='z-[5] w-[90%] grid mx-auto md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-[7rem] place-items-center md:px-[6rem]'>
 				{featuresData.map(data => (
 					<FeatureCard
+						key={data.Icon}
 						heading={data.heading}
 						paragraph={data.paragraph}
 						Icon={data.Icon}
