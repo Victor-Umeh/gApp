@@ -1,4 +1,4 @@
-import CustomSectionHeading from './customSectionHeading'
+import CustomSectionHeading from './CustomSectionHeading'
 import { IArticleProps } from '../../types'
 
 const Article = ({

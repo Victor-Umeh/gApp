@@ -1,11 +1,10 @@
-import FeaturesSection from '../components/features'
-import IntroSection from '../components/intro'
-import OverviewSection from '../components/overview'
-import PricesSection from '../components/prices'
-import SupportSection from '../components/support'
-import Banner from '../components/banner'
-import ScrollBtn from '../components/ui/scrollBtn'
-import MobileNav from '../components/ui/mobileNav'
+import FeaturesSection from '../components/Features'
+import IntroSection from '../components/Intro'
+import OverviewSection from '../components/Overview'
+import PricesSection from '../components/Prices'
+import SupportSection from '../components/Support'
+import Banner from '../components/Banner'
+import MobileNav from '../components/ui/MobileNav'
 
 export default function Home() {
 	return (
@@ -19,7 +18,6 @@ export default function Home() {
 				<SupportSection />
 				<MobileNav />
 			</main>
-			<ScrollBtn />
 		</>
 	)
 }

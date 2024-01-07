@@ -1,5 +1,5 @@
-import CustomSectionHeading from './ui/customSectionHeading'
-import GallerySlide from './ui/gallerySlide'
+import CustomSectionHeading from './ui/CustomSectionHeading'
+import GallerySlide from './ui/GallerySlide'
 
 const GallerySection = () => {
 	return (

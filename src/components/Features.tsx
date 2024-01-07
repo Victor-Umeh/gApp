@@ -1,4 +1,4 @@
-import FeatureCard from './ui/featureCard'
+import FeatureCard from './ui/FeatureCard'
 import { featuresData } from '../utils/constants'
 
 const FeaturesSection = () => {

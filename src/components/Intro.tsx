@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import mobile from '../../public/mobile.png'
 import { Apple, AndriodIco } from '../icons'
-import NavBar from './ui/navBar'
+import NavBar from './ui/NavBar'
 
 const IntroSection = () => {
 	const ref = useRef<any>()

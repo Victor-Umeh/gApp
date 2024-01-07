@@ -1,4 +1,4 @@
-import CustomSectionHeading from './ui/customSectionHeading'
+import CustomSectionHeading from './ui/CustomSectionHeading'
 import { socials } from '../utils/constants'
 import { Apple, Android } from '../icons'
 
